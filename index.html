@@ -17,24 +17,13 @@
 </head>
 
 <body>
-  <header>
+<header class="text-center py-3">
     <h1>GLIZZY</h1>
     <h2>Una revista sobre diversos temas</h2>
   </header>
 
-  <!-- Navbar con Bootstrap pero con apariencia personalizada -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-custom">
-    <div class="container-fluid">
-      <div class="navbar-nav mx-auto nav-links">
-        <a class="nav-link" href="#presentacion">Presentación</a>
-        <a class="nav-link" href="#noticias">Últimas Noticias</a>
-        <a class="nav-link" href="#sobremi">Sobre Mí</a>
-        <a class="nav-link" href="views/contact/contact.html">Contacto</a>
-        <a class="nav-link" href="views/config/config.html">Configuración</a>
-        <a class="nav-link" href="#masinfo">Más Info</a>
-      </div>
-    </div>
-  </nav>
+  <!-- Navbar dinámico -->
+  <div id="navbar-container"></div>
 
   <!-- Carrusel Bootstrap personalizado -->
   <div id="carouselInicio" class="carousel slide" data-bs-ride="carousel">
@@ -269,7 +258,8 @@
     </section>
   </footer>
 
-  <!-- Bootstrap JS con Popper (nuevo) -->
+  <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../../shared/js/includeNavbar.js"></script>
 </body>
 </html>
