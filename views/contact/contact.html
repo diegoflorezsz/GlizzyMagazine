@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacto Glizzy</title>
+
+  <!-- Nuevos enlaces a CSS reestructurados -->
+  <link rel="stylesheet" href="../../shared/css/vars.css" />
+  <link rel="stylesheet" href="../../shared/css/common.css" />
+  <link rel="stylesheet" href="contact.css" />
+</head>
+
+<body>
+  <header>
+    <h1>GLIZZY</h1>
+    <h2>Una revista sobre diversos temas</h2>
+    <hr />
+  </header>
+
+  <nav>
+    <div class="nav-links">
+      <a href="../../index.html">Inicio</a>
+      <a href="../../index.html#noticias">Últimas Noticias</a>
+      <a href="../../index.html#sobremi">Sobre Mí</a>
+      <a href="contact.html">Contacto</a>
+      <a href="../config/config.html">Configuración</a>
+      <a href="../../index.html#masinfo">Más Info</a>
+    </div>
+  </nav>
+
+  <hr />
+
+  <main>
+    <section class="contacto">
+      <h2>Formulario de Contacto</h2>
+      <p>Si tienes preguntas, sugerencias o simplemente quieres saludar, <i>¡escríbenos!</i></p>
+
+      <fieldset>
+        <form id="form-contacto" action="#" method="post">
+          <!--Nombre-->
+          <div>
+            <label for="nombre">Nombre completo:</label><br />
+            <input type="text" id="nombre" name="nombre" required />
+          </div><br />
+
+          <!--Correo-->
+          <div>
+            <label for="email">Correo electrónico:</label><br />
+            <input type="email" id="email" name="email" required />
+          </div><br />
+
+          <!--Tema-->
+          <div>
+            <label for="tema">Tema del mensaje:</label><br />
+            <select id="tema" name="tema" required>
+              <option value=""> - Selecciona un tema - </option>
+              <option value="saludo">Saludo</option>
+              <option value="consulta">Pregunta</option>
+              <option value="sugerencia">Petición</option>
+            </select>
+          </div><br />
+
+          <!--Mensaje-->
+          <div>
+            <label for="mensaje">Mensaje:</label><br />
+            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+          </div><br />
+
+          <!-- Botón -->
+          <button type="submit">Enviar</button>
+        </form>
+      </fieldset>
+    </section>
+  </main>
+
+  <footer>
+    <div id="masinfo">
+      <section id="tablacontenido">
+        <h3>GLIZZY</h3>
+        <p>© 2025 Mi Revista Digital. Todos los derechos reservados.</p>
+        <p>Contacto: diagoaflroesc@gmail.com | Instagram: @diegoflorezsz | Tel: +58 412-1234567</p>
+      </section>
+    </div>
+  </footer>
+
+  <script src="../../shared/js/contactForm.js"></script>
+</body>
+
+</html>

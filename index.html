@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Glyzzy Magazine</title>
+
+  <!-- Google Fonts: Montserrat -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,400;1,700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Tus estilos personalizados -->
+  <link rel="stylesheet" href="shared/css/vars.css" />
+  <link rel="stylesheet" href="shared/css/common.css" />
+</head>
+
+<body>
+  <header>
+    <h1>GLIZZY</h1>
+    <h2>Una revista sobre diversos temas</h2>
+  </header>
+
+  <!-- Navbar con Bootstrap pero con apariencia personalizada -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-custom">
+    <div class="container-fluid">
+      <div class="navbar-nav mx-auto nav-links">
+        <a class="nav-link" href="#presentacion">Presentación</a>
+        <a class="nav-link" href="#noticias">Últimas Noticias</a>
+        <a class="nav-link" href="#sobremi">Sobre Mí</a>
+        <a class="nav-link" href="views/contact/contact.html">Contacto</a>
+        <a class="nav-link" href="views/config/config.html">Configuración</a>
+        <a class="nav-link" href="#masinfo">Más Info</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Carrusel Bootstrap personalizado -->
+  <div id="carouselInicio" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+
+    <!-- Slide 1: Drake -->
+    <div class="carousel-item active">
+      <img src="assets/img/drakeCarousel.jpg" class="d-block w-100" alt="Drake">
+      <div class="carousel-caption text-start">
+        <h5>Drake: un ícono del R&B moderno</h5>
+        <p>Descubre su nuevo álbum <i>Some Sexy Songs 4 U</i>, donde el artista fusiona emociones, sonidos y estilo.</p>
+      </div>
+    </div>
+
+    <!-- Slide 2: Cosmid Kid -->
+    <div class="carousel-item">
+      <img src="assets/img/cosmickidCarousel.jpeg" class="d-block w-100" alt="Cosmid Kid">
+      <div class="carousel-caption text-end">
+        <h5>Cosmid Kid: talento emergente</h5>
+        <p>Una propuesta distinta, fresca y cargada de energía. Conoce su historia y su visión musical.</p>
+      </div>
+    </div>
+
+    <!-- Slide 3: Isco -->
+    <div class="carousel-item">
+      <img src="assets/img/iscocarousel.jpg" class="d-block w-100" alt="Isco">
+      <div class="carousel-caption text-start">
+        <h5>Isco Alarcón: magia en los pies</h5>
+        <p>De Málaga al mundo. Una carrera brillante marcada por el arte, el control y la creatividad en la cancha.</p>
+      </div>
+    </div>
+
+  </div>
+
+    <!-- Controles del carrusel -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselInicio" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselInicio" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+
+
+  <main>
+    <div class="sidebar">
+      <aside class="sobre-mi" id="sobremi">
+        <article>
+          <h2>Sobre Mí</h2>
+          <h3>Conoce un poco más acerca del autor de la revista</h3>
+          <p><strong>Mi nombre es Diego Andres Flores Colmenares</strong></p>
+          <p>
+            Soy estudiante de <b>Ingeniería Informática</b> en la
+            <b>Universidad Católica Andrés Bello</b>, apasionado por el fútbol y
+            <i>fiel</i> seguidor del Real Madrid. Además de mi formación académica,
+            <b>la música</b> ha sido parte de mi vida desde siempre. Como percusionista,
+            he tenido el honor de representar al estado Lara y a Venezuela en diversos
+            ensambles alrededor del mundo. Uno de los momentos más destacados de mi carrera
+            musical fue ser representante del ensamble de percusión de Orange County, en
+            Florida, Estados Unidos.
+          </p>
+        </article>
+      </aside>
+
+      <section class="que-veras" id="presentacion">
+        <article>
+          <h2>¿Qué verás en la revista?</h2>
+          <h3>Conoce un poco más acerca de la revista</h3>
+          <p>
+            En estas páginas conocerás un poco de mi mundo: mi pasión por el
+            <b>Real Madrid</b>, mi vida como músico y estudiante de Ingeniería, y una
+            mirada personal al nuevo álbum de Drake,
+            <i>Some Sexy Songs 4 U</i>. Una mezcla de fútbol, ritmo y emociones contadas
+            <b>desde lo más honesto.</b>
+          </p>
+        </article>
+      </section>
+
+      <section class="temas-populares" id="temaspopulares">
+        <h2>Temas más populares</h2>
+        <ol>
+          <li>Fútbol - Real Madrid</li>
+          <li>Música - Drake y PARTYNEXTDOOR</li>
+          <li>Vida Universitaria - UCAB e Ingeniería</li>
+        </ol>
+      </section>
+    </div>
+
+    <section id="noticias">
+      <h2>Últimas Noticias</h2>
+
+      <article>
+        <h3>Hablemos de Fútbol</h3>
+        <h4>El Real Madrid</h4>
+        <figure class="media-container">
+          <img width="800" src="https://images.ecestaticos.com/PHL1MKbcHI4UzqiUm5ajQiY3C88=/0x0:2272x1515/1200x675/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2Feac%2F576%2Fc22%2Feac576c22b3d2a7f1d4c485e42f6bf9c.jpg" alt="Real Madrid" />
+          <figcaption>
+            Jugadores del Real Madrid al ganar en penales un partido de Champions en la presente temporada.
+          </figcaption>
+        </figure>
+        <p>
+          Ser del <b>Real Madrid</b> es algo que va <i>más allá</i> de ver fútbol. Es
+          <i>una emoción</i> que se vive cada fin de semana, <i>un orgullo</i> que llevo en el alma desde siempre...
+          <b>El Real Madrid es el más grande del mundo</b>.
+        </p>
+
+        <figure>
+          <img src="https://e00-elmundo.uecdn.es/assets/multimedia/imagenes/2023/09/20/16952096459887.jpg" alt="Escudo del Real Madrid" width="500" />
+          <figcaption>El escudo del club más grande del mundo: el Real Madrid.</figcaption>
+        </figure>
+
+        <h4><strong>¡Hala Madrid por siempre!</strong></h4>
+        <hr />
+      </article>
+
+      <article>
+        <h3>La Música</h3>
+        <h4>¿Creías que no íbamos a hablar de música?</h4>
+        <h5>Drake y PARTYNEXTDOOR. $$$4U</h5>
+        <p>
+          El nuevo álbum de Drake, <i>Some Sexy Songs 4 U</i>, es una experiencia sensorial...
+          <b>es una vibra completa</b>... perfecto para desconectarse del mundo.
+        </p>
+        <p>
+          <b>Si no lo has escuchado, te estás perdiendo de algo que no se escucha todos los días.</b>
+        </p>
+        <figure class="media-container">
+          <img width="800" src="https://www.revolt.tv/article/media_12b064dae07414321d7826576a30127a64f1eb5e7.jpeg?width=1200&format=pjpg&optimize=medium/" alt="Cover SSS4U" />
+          <figcaption>Cover Oficial de $$$4U. Uno de los mejores álbumes del canadiense.</figcaption>
+        </figure>
+        <hr />
+      </article>
+
+      <article>
+        <h3>Video Oficial de <i>Nokia</i></h3>
+        <h4>Drake ha vuelto con su nuevo videoclip</h4>
+        <p>El video, dirigido por <b><i>Theo Skudra</i></b>, usa cámaras IMAX y se presenta en blanco y negro.</p>
+        <div class="video-container">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/RDH71p3LgWM?si=6WJCEVcLLn7F_jxZ"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen>
+          </iframe>
+        </div>
+        <hr />
+      </article>
+    </section>
+  </main>
+
+  <section class="container my-5">
+  <h2 class="mb-4 text-center">Temas Destacados</h2>
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    
+    <!-- Card 1: Drake -->
+    <div class="col">
+      <div class="card h-100">
+        <img src="assets/img/drakeCard.jpg" class="card-img-top" alt="Drake">
+        <div class="card-body">
+          <h5 class="card-title">Drake</h5>
+          <p class="card-text">Descubre las emociones detrás de <em>Some Sexy Songs 4 U</em>, el nuevo álbum del ícono canadiense.</p>
+        </div>
+        <div class="card-footer text-end">
+          <a href="#noticias" class="btn btn-primary btn-sm">Ver más</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2: Cosmic Kid -->
+    <div class="col">
+      <div class="card h-100">
+        <img src="assets/img/cosmickidCard.jpeg" class="card-img-top" alt="Cosmic Kid">
+        <div class="card-body">
+          <h5 class="card-title">Cosmic Kid</h5>
+          <p class="card-text">Una nueva promesa del R&B alternativo que combina estética futurista con letras honestas.</p>
+        </div>
+        <div class="card-footer text-end">
+          <a href="#noticias" class="btn btn-primary btn-sm">Explorar</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3: Isco -->
+    <div class="col">
+      <div class="card h-100">
+        <img src="assets/img/iscoCard.jpg" class="card-img-top" alt="Isco">
+        <div class="card-body">
+          <h5 class="card-title">Isco</h5>
+          <p class="card-text">El mago de Málaga renace en la Liga. Un repaso a su historia, magia y regreso al protagonismo.</p>
+        </div>
+        <div class="card-footer text-end">
+          <a href="#noticias" class="btn btn-primary btn-sm">Conocer más</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+  <footer>
+    <section id="masinfo">
+      <h2>Video y Audio Solicitados</h2>
+
+      <audio controls>
+        <source src="https://samplelib.com/lib/preview/mp3/sample-3s.mp3" type="audio/mpeg" />
+        Tu navegador no soporta la reproducción de audio.
+      </audio>
+
+      <video width="320" height="240" controls>
+        <source src="https://samplelib.com/lib/preview/mp4/sample-5s.mp4" type="video/mp4" />
+        Tu navegador no soporta el formato de video.
+      </video>
+
+      <hr />
+
+      <section id="tablacontenido">
+        <h3>Glosario de términos</h3>
+        <dl>
+          <dt>API</dt>
+          <dd>Interfaz de Programación de Aplicaciones.</dd>
+          <dt>SEO</dt>
+          <dd>Optimización para Motores de Búsqueda.</dd>
+        </dl>
+
+        <hr />
+        <p>© 2025 Mi Revista Digital. Todos los derechos reservados.</p>
+        <p>Contacto: diagoaflroesc@gmail.com | Instagram: @diegoflorezsz | Tel: +58 412-1234567</p>
+      </section>
+    </section>
+  </footer>
+
+  <!-- Bootstrap JS con Popper (nuevo) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

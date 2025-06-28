@@ -1,0 +1,222 @@
+/* Estilos para la sección de configuración */
+.configuracion {
+    background-color: var(--color-fondo-caja);
+    border: none;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: var(--sombra-suave);
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+/* FIELDSET y LEGEND */
+.configuracion fieldset {
+    border: none;
+    padding: 10px 0;
+    margin-bottom: 30px;
+}
+
+.configuracion legend {
+    font-weight: 700;
+    color: var(--color-texto-principal);
+    padding: 0 10px;
+}
+
+.configuracion fieldset:first-of-type legend {
+    font-size: 28px;
+    text-align: center;
+    width: 100%;
+}
+
+/* FORMULARIOS */
+.configuracion form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+.configuracion form div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* LABELS */
+.configuracion label {
+    font-weight: 700;
+    color: var(--color-texto-principal);
+    margin-bottom: 5px;
+}
+
+/* INPUTS Y SELECT */
+.configuracion input,
+.configuracion select {
+    padding: 8px;
+    border: 1px solid var(--color-detalle);
+    border-radius: 5px;
+    font-family: var(--fuente-principal);
+    transition: border-color 0.3s ease;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.configuracion input:focus,
+.configuracion select:focus {
+    border-color: var(--color-borde-focus);
+    outline: none;
+}
+
+.configuracion input[type="radio"] {
+    margin-right: 10px;
+    width: auto;
+}
+
+.configuracion input[type="file"],
+.configuracion input[type="color"] {
+    padding: 5px;
+}
+
+/* BOTONES */
+.configuracion button {
+    background-color: var(--color-fondo-principal);
+    color: var(--color-texto-claro);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    max-width: 250px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.configuracion button:hover {
+    background-color: var(--color-hover);
+}
+
+.configuracion button:focus {
+    outline: 2px solid var(--color-borde-focus);
+    outline-offset: 2px;
+}
+
+/* TABLA DE USUARIOS */
+.tabla-usuarios {
+    margin-top: 30px;
+    overflow-x: auto;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.tabla-usuarios table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    box-shadow: var(--sombra-suave);
+    min-width: 600px;
+}
+
+.tabla-usuarios th,
+.tabla-usuarios td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid var(--color-detalle);
+}
+
+.tabla-usuarios th {
+    background-color: var(--color-fondo-principal);
+    color: var(--color-texto-claro);
+}
+
+.tabla-usuarios td {
+    color: var(--color-texto-principal);
+}
+
+.tabla-usuarios tr {
+    transition: background-color 0.3s ease;
+}
+
+.tabla-usuarios tr:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.tabla-usuarios img {
+    border-radius: 0;
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.tabla-usuarios img:hover {
+    transform: scale(1.2);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .configuracion {
+        padding: 15px;
+        max-width: 100%;
+    }
+
+    .configuracion form div {
+        max-width: 100%;
+    }
+
+    .tabla-usuarios table {
+        font-size: 14px;
+        min-width: unset;
+    }
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .configuracion {
+        padding: 15px;
+        max-width: 100%;
+        margin: 0 10px;
+    }
+
+    .configuracion form {
+        gap: 12px;
+    }
+
+    .configuracion form div {
+        max-width: 100%;
+    }
+
+    .configuracion label,
+    .configuracion input,
+    .configuracion select,
+    .configuracion button {
+        font-size: 16px;
+    }
+
+    .tabla-usuarios {
+        overflow-x: auto;
+    }
+
+    .tabla-usuarios table {
+        font-size: 14px;
+        min-width: 500px;
+    }
+
+    .tabla-usuarios th,
+    .tabla-usuarios td {
+        padding: 8px;
+    }
+
+    .tabla-usuarios img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .configuracion button {
+        max-width: 100%;
+    }
+}

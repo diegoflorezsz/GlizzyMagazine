@@ -1,0 +1,98 @@
+/* Estilos para la página de Contacto */
+.contacto {
+    background-color: var(--color-fondo-caja);
+    border: none;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: var(--sombra-suave);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contacto fieldset {
+    border: none;
+    padding: 0;
+}
+
+.contacto form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contacto form div {
+    display: flex;
+    flex-direction: column;
+}
+
+.contacto label {
+    font-weight: 700;
+    color: var(--color-texto-principal);
+    margin-bottom: 5px;
+}
+
+.contacto input,
+.contacto textarea,
+.contacto select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--color-detalle);
+    border-radius: 5px;
+    font-family: var(--fuente-principal);
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+.contacto input:focus,
+.contacto textarea:focus,
+.contacto select:focus {
+    border-color: var(--color-borde-focus);
+    outline: none;
+}
+
+.contacto textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.contacto button {
+    background-color: var(--color-fondo-principal);
+    color: var(--color-texto-claro);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contacto button:hover {
+    background-color: var(--color-hover);
+}
+
+.contacto button:focus {
+    outline: 2px solid var(--color-detalle);
+    outline-offset: 2px;
+}
+
+/* ----------- RESPONSIVE DESIGN ----------- */
+@media (max-width: 768px) {
+    .contacto {
+        padding: 15px;
+        margin: 10px;
+    }
+
+    .contacto input,
+    .contacto textarea,
+    .contacto select,
+    .contacto button {
+        font-size: 16px;
+    }
+
+    .contacto textarea {
+        min-height: 120px;
+    }
+
+    .contacto form {
+        gap: 12px;
+    }
+}

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Configuración Glizzy</title>
+
+  <!-- Nuevos enlaces a CSS reestructurados -->
+  <link rel="stylesheet" href="../../shared/css/vars.css">
+  <link rel="stylesheet" href="../../shared/css/common.css">
+  <link rel="stylesheet" href="config.css">
+</head>
+
+<body>
+  <header>
+    <h1>GLIZZY</h1>
+    <h2>Una revista sobre diversos temas</h2>
+    <hr />
+  </header>
+
+  <nav>
+    <div class="nav-links">
+      <a href="/index.html">Inicio</a>
+      <a href="/index.html#noticias">Últimas Noticias</a>
+      <a href="/index.html#sobremi">Sobre Mí</a>
+      <a href="/views/contact/contact.html">Contacto</a>
+      <a href="/views/config/config.html">Configuración</a>
+      <a href="/index.html#masinfo">Más Info</a>
+    </div>
+  </nav>
+
+  <hr />
+
+  <main>
+    <section class="configuracion">
+
+      <!-- Formulario de Configuración de Perfil -->
+      <form>
+        <fieldset>
+          <legend>Configuración de Perfil</legend>
+
+          <div>
+            <label for="imagen">Imagen de perfil:</label>
+            <input type="file" id="imagen" name="imagen" />
+          </div><br />
+
+          <div>
+            <label for="fecha">Fecha de nacimiento:</label>
+            <input type="date" id="fecha" name="fecha" required />
+          </div><br />
+
+          <div>
+            <label>Género:</label><br />
+            <input type="radio" id="masculino" name="genero" value="masculino" />
+            <label for="masculino">Masculino</label><br />
+            <input type="radio" id="femenino" name="genero" value="femenino" />
+            <label for="femenino">Femenino</label><br />
+            <input type="radio" id="otro" name="genero" value="otro" />
+            <label for="otro">Otro</label>
+          </div><br />
+
+          <div>
+            <label for="color">Color primario de la página:</label>
+            <input type="color" id="color" name="color" />
+          </div><br />
+
+          <button type="submit">Guardar perfil</button>
+        </fieldset>
+      </form>
+
+      <br />
+
+      <!-- Formulario de Cambio de Contraseña -->
+      <form>
+        <fieldset>
+          <legend>Cambiar Clave</legend>
+
+          <div>
+            <label for="usuario">Nombre de usuario:</label>
+            <input type="text" id="usuario" name="usuario" required />
+          </div><br />
+
+          <div>
+            <label for="oldpass">Antigua contraseña:</label>
+            <input type="password" id="oldpass" name="oldpass" required />
+          </div><br />
+
+          <div>
+            <label for="newpass">Nueva contraseña:</label>
+            <input type="password" id="newpass" name="newpass" required />
+          </div><br />
+
+          <button type="submit">Cambiar contraseña</button>
+        </fieldset>
+      </form>
+
+      <h2>Usuarios Registrados</h2>
+      <div class="tabla-usuarios">
+        <table>
+          <thead>
+            <tr>
+              <th>IP</th>
+              <th>Correo</th>
+              <th>Nombre</th>
+              <th>Apellido</th>
+              <th>Cédula</th>
+              <th>Fecha de Nacimiento</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><img src="/assets/img/iscoperfil.jpg" alt="Usuario 1" width="60" /></td>
+              <td>iscoelmejordelmundo@gmail.com</td>
+              <td>Francisco</td>
+              <td>Alarcon</td>
+              <td>12345678</td>
+              <td>1995-04-12</td>
+            </tr>
+            <tr>
+              <td><img src="/assets/img/mbappeperfil.jpg" alt="Usuario 2" width="60" /></td>
+              <td>mbappe.badass@hotmail.com</td>
+              <td>Kylian</td>
+              <td>Mbappe</td>
+              <td>23456789</td>
+              <td>1998-09-23</td>
+            </tr>
+            <tr>
+              <td><img src="/assets/img/xokasperfil.jpg" alt="Usuario 3" width="60" /></td>
+              <td>xokasespanol@gmail.com</td>
+              <td>Joaquin</td>
+              <td>Gómez</td>
+              <td>34567890</td>
+              <td>1992-01-05</td>
+            </tr>
+            <tr>
+              <td><img src="/assets/img/supaperfil.jpg" alt="Usuario 4" width="60" /></td>
+              <td>lilsupatupapa@yahoo.com</td>
+              <td>Marlon</td>
+              <td>Morales</td>
+              <td>45678901</td>
+              <td>2000-06-30</td>
+            </tr>
+            <tr>
+              <td><img src="/assets/img/cr7perfil.jpg" alt="Usuario 5" width="60" /></td>
+              <td>cristianoronaldo7@gmail.com</td>
+              <td>Cristiano</td>
+              <td>Ronaldo</td>
+              <td>56789012</td>
+              <td>1997-11-14</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div id="masinfo">
+      <section id="tablacontenido">
+        <h3>GLIZZY</h3>
+        <p>© 2025 Mi Revista Digital. Todos los derechos reservados.</p>
+        <p>Contacto: diagoaflroesc@gmail.com | Instagram: @diegoflorezsz | Tel: +58 412-1234567</p>
+      </section>
+    </div>
+  </footer>
+
+  <script src="../../shared/js/config.js"></script>
+</body>
+
+</html>
