@@ -4,23 +4,22 @@ Este documento detalla la estructura de carpetas del proyecto **Glizzy** y justi
 
 ## Estructura general del proyecto
 
-/
-├── index.html                   (Vista principal de la revista)
-├── views/
-│   ├── contact/                (Vista y lógica del formulario de contacto)
-│   ├── config/                 (Vista y lógica para configuración del perfil y contraseña)
-├── shared/
-│   ├── css/
-│   │   ├── vars.css            (Variables CSS del proyecto)
-│   │   ├── common.css          (Estilos comunes reutilizados)
-│   ├── js/
-│   │   ├── contactoForm.js     (Lógica JS del formulario de contacto)
-│   │   ├── configForms.js      (Lógica JS de la configuración)
-│   ├── assets/
-│       └── img/                (Imágenes utilizadas en las vistas)
-├── docs/
-│   └── README.md               (Explicación técnica y justificación del proyecto)
-└── README.md                   (Este archivo)
+### Separación de vistas por carpeta  
+Cada página tiene su propia carpeta (`contact`, `config`, etc.) para mantener separados sus archivos HTML, CSS y, si aplica, JS individual. Esto permite una estructura modular y ordenada.
+
+### Uso de carpeta `/shared`  
+Los elementos reutilizables como estilos comunes, scripts compartidos y componentes modulares (por ejemplo, `navbar.html`) están centralizados en la carpeta `shared`, lo que facilita el mantenimiento global del sitio y evita duplicación de código.
+
+### Estilo centralizado y personalizado  
+- `vars.css` define las variables CSS globales (colores, tipografía, etc.).  
+- `common.css` contiene los estilos universales aplicables a todo el sitio.  
+- Cada vista posee su propio archivo CSS para tener control total sobre su apariencia específica.
+
+### Modularización con JavaScript  
+Se utilizó el archivo `incluirNavbar.js` para insertar dinámicamente el `navbar.html` en todas las vistas. Esto asegura consistencia en la navegación y evita tener que copiar y pegar el mismo código en múltiples archivos.
+
+### Rutas absolutas  
+Se optó por usar rutas absolutas (por ejemplo, `/index.html`) en los enlaces del `navbar` y otras partes del sitio. Esto garantiza que los enlaces funcionen correctamente sin importar desde qué subcarpeta se acceda a la página.
 
 
 ## Justificación de Decisiones Técnicas
